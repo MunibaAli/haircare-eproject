@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4; /* Light gray background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px; /* Adjust width as needed */
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #e98282; /* Pink heading */
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #777; /* Darker gray label */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 22px); /* Account for padding */
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #e98282; /* Pink button */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #d16a6a; /* Darker pink on hover */
+        }
+
+        .switch-form {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+
+        .switch-form a {
+            color: #e98282; /* Pink link */
+            text-decoration: none;
+        }
+
+        .switch-form a:hover {
+            text-decoration: underline;
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <div class="error-message" id="error-message"></div>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="login-email">Email</label>
+                <input type="email" id="login-email" name="login-email" required>
+            </div>
+            <div class="form-group">
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="login-password" required>
+            </div>
+            <button type="submit">Login</button>
+            <div class="switch-form">
+                Don't have an account? <a href="#" id="switch-to-register">Register</a>
+            </div>
+        </form>
+
+        <form id="register-form" style="display: none;">
+            <h2>Register</h2>
+            <div class="form-group">
+                <label for="register-name">Name</label>
+                <input type="text" id="register-name" name="register-name" required>
+            </div>
+            <div class="form-group">
+                <label for="register-email">Email</label>
+                <input type="email" id="register-email" name="register-email" required>
+            </div>
+            <div class="form-group">
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" name="register-password" required>
+            </div>
+            <button type="submit">Register</button>
+            <div class="switch-form">
+                Already have an account? <a href="#" id="switch-to-login">Login</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById('login-form');
+        const registerForm = document.getElementById('register-form');
+        const switchToRegister = document.getElementById('switch-to-register');
+        const switchToLogin = document.getElementById('switch-to-login');
+        const errorMessage = document.getElementById('error-message');
+
+        switchToRegister.addEventListener('click', (event) => {
+            event.preventDefault();
+            loginForm.style.display = 'none';
+            registerForm.style.display = 'block';
+            errorMessage.textContent = ''; // Clear any previous errors
+        });
+
+        switchToLogin.addEventListener('click', (event) => {
+            event.preventDefault();
+            registerForm.style.display = 'none';
+            loginForm.style.display = 'block';
+            errorMessage.textContent = ''; // Clear any previous errors
+        });
+
+        // Placeholder form submission handling (replace with your actual logic)
+        loginForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            // Perform login validation and submission here
+        
+            const email = loginForm.elements['login-email'].value;
+            const password = loginForm.elements['login-password'].value;
+
+            if (email === 'test@example.com' && password === 'password') {
+               
+                alert('Login Successful (Placeholder)');
+            } else {
+                errorMessage.textContent = 'Invalid email or password';
+            }
+        });
+
+        registerForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            // Perform registration validation and submission here
+          
+            const name = registerForm.elements['register-name'].value;
+            const email = registerForm.elements['register-email'].value;
+            const password = registerForm.elements['register-password'].value;
+
+            // Perform registration logic 
+            alert('Registration Successful (Placeholder)');
+        });
+    </script>
+</body>
+
+</html>

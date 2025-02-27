@@ -1,0 +1,885 @@
+/* navbar1 */
+body .top-bar { /* Added body selector */
+  background-color: #e98282;
+  color: white;
+  padding: 10px 0;
+  width: 100%;
+}
+.top-bar {
+    background-color: #e98282;
+    color: white;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+.right-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.right-content a {
+    color: white;
+    text-decoration: none;
+}
+
+.right-content i { 
+    font-size: 1.2rem;
+}
+
+.right-content a:last-child { 
+    font-weight: bold;
+}
+
+/* navbar2 */
+.navbar2 {
+    background-color: white;
+    padding: 20px 0; 
+    width: 100%;
+  }
+  
+  .navbar2 .container {
+    max-width: 960px; 
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar2 .logo {
+    flex-grow: 1; 
+    text-align: center; 
+}
+  
+  .navbar2 .logo img {
+    max-height: 80px; 
+    vertical-align: middle;
+    
+  }
+  
+  .navbar2 .right-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+  }
+  
+  .navbar2 .right-content a {
+    color: #333; 
+    text-decoration: none;
+  }
+  
+  .navbar2 .cart {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+  
+  .navbar2 .cart img {
+    width: 20px;
+  }
+  .search-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fce9e9;
+    padding: 10px;
+    display: none;
+    z-index: 1001;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.search-input {
+    width: 70%;
+    padding: 8px 12px;
+    border: 1px solid #e98282;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.search-button {
+    background-color: #e98282;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.close-search {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    color: #666;
+}
+
+  /* navbar3 */
+  .navbar3 {
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+    padding: 10px 0;
+    width: 100%;
+  }
+  
+  .navbar3 .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+  }
+  
+  .dropdown {
+    position: relative; 
+    display: inline-block;
+  }
+  
+  .dropbtn {
+    background-color: transparent; 
+    color: #333;
+    padding: 10px; 
+    border: none;
+    cursor: pointer;
+    font-size: 14px; 
+  }
+  
+  .dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #f9f9f9; 
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+  }
+  
+  .dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block; 
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd; 
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block; 
+  }
+
+  /* carousel */
+  .loop{
+    height: 600px;
+    overflow: hidden;
+  }
+  .loop img {
+    height: 100%;
+    object-fit: cover;
+  }
+/* homematerial */
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: white; /* Changed to white */
+  color: #333;
+}
+
+header {
+  background-color: #e98282;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Category Styles */
+.category {
+  margin-bottom: 60px;
+}
+
+.category h2 {
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.category h2 a {
+  color: #e98282;
+  text-decoration: none;
+  font-size: 0.8em;
+  margin-left: 10px;
+}
+
+.category h2 a:hover {
+  text-decoration: underline;
+}
+
+/* Product Cards  */
+/* Product Cards (Modified) */
+.card {
+  border: none; /* Removed the grey border */
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: white; /* Added white background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transitions */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.card-img-top {
+  border-radius: 8px 8px 0 0;
+  object-fit: contain;
+  width: 100%;
+  height: 200px;
+}
+
+.card-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.brand {
+  color: #777;
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+/* "SEE MORE" Button */
+/* "SEE MORE" Button (Modified) */
+.see-more {
+  background-color: #e98282; /* Pink background */
+  color: white;
+  padding: 10px 20px; /* Adjusted padding for better fit */
+  border: 2px solid #e98282; /* Added border */
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto 0;
+  font-size: 1em; /* Adjusted font size */
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transitions */
+}
+
+.see-more:hover {
+  background-color: white; /* White background on hover */
+  color: #e98282; /* Pink text on hover */
+  transform: scale(1.05); /* Slight scale animation on hover */
+  border-color: #e98282; /* Keep pink border on hover */
+}
+/* "ADD TO CART" Button */
+.add-to-cart {
+  background-color: #e98282;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.add-to-cart:hover {
+  background-color: #e98282;
+}
+
+ /* cart design */
+ /* Cart Sidebar CSS */
+.cart-container {
+    width: 380px; 
+    background-color: #ffffff; 
+    padding: 25px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    position: fixed;
+    top: 0;
+    left: 0; 
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 9999;
+    border-right: 1px solid #eee;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; 
+}
+
+.cart-header h2 {
+    margin: 0;
+    font-size: 1.5em; 
+    font-weight: 600; 
+    color: #333;
+}
+
+.cart-header a {
+    text-decoration: none;
+    color: #888; 
+    font-size: 1.2em;
+    transition: color 0.3s ease; 
+}
+
+.cart-header a:hover {
+    color: #e98282; 
+}
+
+.cart-item {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid #f0f0f0; 
+    padding: 20px 0; 
+    position: relative;
+}
+
+.cart-item:last-child {
+    border-bottom: none; 
+}
+
+.cart-item img {
+    width: 80px; 
+    margin-right: 20px;
+    border-radius: 8px;
+    object-fit: cover; 
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-details h3 {
+    margin: 0 0 5px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #333;
+}
+
+.item-details p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.quantity button {
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.quantity button:hover {
+    background-color: #e0e0e0;
+}
+
+.quantity span {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+.price {
+    font-weight: 600;
+    color: #333;
+    font-size: 1em;
+    margin-left: 10px;
+}
+
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+}
+
+.subtotal span {
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.buttons button {
+    background-color: #e98282;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: #e98282;
+}
+
+.buttons button:last-child {
+    background-color: #333;
+}
+
+.close-item {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #888;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+.close-item:hover {
+    color: #e98282;
+}
+
+
+
+/* search */
+
+.navbar2 .right-content {
+    position: relative; 
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+  }
+  
+  /* Search Dropdown */
+  .search-dropdown {
+    display: none; 
+    position: absolute;
+    top: 110%; 
+    right: 0; 
+    width: 400px; 
+    background: #fff; 
+    border: 2px solid #e98282; 
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 12px;
+    z-index: 9999; 
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Show Search Dropdown */
+  .search-dropdown.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Search Content */
+  .search-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Input Field */
+  .search-input {
+    width: 100%; /* Full width */
+    padding: 10px 15px;
+    border: 1px solid #e98282;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+    color: #333;
+    background-color: #fdf2f2; 
+  }
+  
+  /* Close "X" Button */
+  .close-search {
+    cursor: pointer;
+    color: #e98282;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 10px;
+    transition: 0.2s;
+  }
+  
+  .close-search:hover {
+    color: #d74f4f; 
+  }
+  
+
+
+  /* footer */
+  .footer {
+    background-color: #333; /* Dark grey background */
+    padding: 30px 20px;
+    font-family: sans-serif;
+    color: #fff; /* White text */
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+  
+  .footer-left p, .footer-center p, .footer-right p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .footer-center p:nth-child(2) {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e98282; /* Your theme color (pink) */
+    text-align: center;
+  }
+  
+  .social-icons a {
+    margin-right: 10px;
+    color: #fff; /* White social icons */
+    font-size: 1.5em;
+  }
+  
+  .footer-logos {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .footer-logo {
+    max-height: 30px;
+    margin-left: 10px;
+    filter: brightness(0) saturate(100%) invert(70%) sepia(50%) saturate(3000%) hue-rotate(320deg) brightness(100%) contrast(100%); /* Pink filter */
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #555; /* Slightly lighter grey border */
+    padding-top: 20px;
+  }
+  
+  .footer-bottom p {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  
+  .footer-bottom i {
+    color: #e98282; /* Your theme color (pink) */
+  }
+
+ 
+  
+  
+  
+  
+ /* Curl Defining Page Styling */
+
+/* Heading Design */
+.category h2 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 30px;
+  background-color: transparent; /* Background color removed */
+}
+
+.curl-defining-products {
+  padding: 20px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px 30px; /* बाएँ और दाएँ पैडिंग को कम किया गया */
+  background-color: transparent;
+  color: #333;
+}
+
+.product-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 250px; /* सभी कार्डों के लिए निश्चित चौड़ाई */
+  margin: 8px; /* मार्जिन को और कम किया गया */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  font-size: 0.8em;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  background-color: #e98282;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: white;
+  color: #e98282;
+  transform: scale(1.05);
+}
+
+
+/* Shampoo Header Section */
+.shampoo-header {
+  background-color: #f1ebeb; /* Dark background */
+  color: black; /* White text */
+  text-align: center;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.shampoo-header h2 {
+  font-size: 3em; /* Font size increased */
+  margin-bottom: 10px;
+  font-weight: 700; /* Font weight made bold */
+}
+
+.shampoo-header p {
+  font-size: 1em;
+}
+
+.shampoo-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.product-count {
+  font-size: 0.9em;
+}
+
+.sort-options {
+  position: relative;
+}
+
+.sort-dropdown {
+  display: inline-block;
+}
+
+.sort-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.sort-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 0;
+}
+
+.sort-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.sort-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.sort-dropdown:hover .sort-content {
+  display: block;
+}
+
+/* CURL PAGE CARD  */
+.product-grid {
+  display: flex; /* Use flexbox instead of grid */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: center; /* Center the cards horizontally */
+  gap: 10px; /* Reduce the gap between cards */
+  padding: 20px;
+  background-color: transparent;
+  color: #333;
+}
+.product-card {
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: white; /* White background */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 23%; /* Make cards responsive with percentage width */
+  margin: 5px; /* Reduce margin */
+}
+/* Optional: Media queries for responsiveness */
+@media (max-width: 768px) {
+  .product-card {
+    width: 48%; /* Two cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%; /* One card per row on very small screens */
+  }
+}
+.product-card img {
+  width: 100%;
+  height: 200px; /* Adjust this height as needed */
+  object-fit: contain; /* Or 'cover' if you prefer cropping */
+  margin-bottom: 10px;
+}
+
+/* Shampoo Section Styling (Adjusted Height, Width, Font, Size, and Exact Color) */
+.shampoo-section {
+  background-color: #e7e1dc; /* आपके चित्र से सटीक रंग */
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.shampoo-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  width: 100%;
+}
+
+.shampoo-header h2 {
+  font-size: 4em;
+  margin: 0;
+  font-weight: 700; /* Font weight made bold */
+}
+
+.shampoo-header .arrow {
+  font-size: 4em;
+  margin-right: 10px;
+  font-weight: 700; /* Font weight made bold */
+}
+.arrow {
+  color: black; /* एरो का रंग काला करें */
+  text-decoration: none; /* नीचे की लाइन हटाएं */
+  /* अन्य मौजूदा स्टाइल */
+}

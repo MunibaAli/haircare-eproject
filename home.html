@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HairCare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- navbar1 -->
+    <div class="top-bar">
+        <div class="container">
+          <div class="left-content">
+            <span>Will Take 3 to 5 Working days Delivery Time.</span>
+          </div>
+          <div class="right-content">
+            <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/login.php/">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="contact.html">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- navbar2 -->
+      <div class="navbar2">
+        <div class="container">
+            <a href="images/logo.png" class="logo">
+                <img src="images/LOGO..PNG" alt="HairCare">
+            </a>
+            <div class="right-content">
+                <a href="loginregister.html">LOGIN/REGISTER</a>
+                <span class="cart">
+                  <a href="#" onclick="toggleCart()">
+                    <i class="bi bi-bag"></i>
+                  </a>
+                </span>
+                <div class="search-container">
+                  <a href="javascript:void(0);" class="search-icon">
+                    <i class="bi bi-search"></i>
+                  </a>
+                </div>
+          
+                <!-- The Search Dropdown -->
+                <div class="search-dropdown" id="searchDropdown">
+                  <div class="search-content">
+                    <input
+                      type="text"
+                      placeholder="Search by product or keyword"
+                      class="search-input"
+                    />
+                    <span class="close-search">X</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    <script src="search.js"></script>
+
+  
+    
+      <!-- cart -->
+      <div class="cart-container" id="cart" style="display: none;">
+        <div class="cart-header">
+            <h2>Shopping cart</h2>
+            <a href="#" onclick="toggleCart()">X Close</a>
+        </div>
+        <div id="cart-items"></div>
+        <div class="subtotal">
+            <span>Subtotal:</span>
+            <span id="subtotal-value">Rs0.00</span>
+        </div>
+        <div class="buttons">
+            <a href="#" onclick="Cart.toggleCart()">X Close</a>
+<button onclick="Cart.viewCart()">VIEW CART</button>
+<button onclick="Cart.checkout()">CHECKOUT</button>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+      <!-- navbar3 -->
+      <div class="navbar3">
+        <div class="container">
+          <div class="dropdown">
+            <button class="dropbtn">SHAMPOO</button>
+            <div class="dropdown-content">
+              <a href="curl.html">Curl Defining</a>
+              <a href="damaged.html">Damaged</a>
+              <a href="dandruff.html">Dandruff</a>
+              <a href="hairloss.html">Hairloss</a>
+              <a href="normal.html">Normal</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">CONDITIONER</button>
+            <div class="dropdown-content">
+              <a href="smoothing.html">Smoothing</a>
+              <a href="Straightening.html">Straightening</a>
+              <a href="volumizing.html">Volumizing Conditioner</a>
+              <!-- <a href="#">Masks</a>
+              <a href="#">Toners</a>
+              <a href="#">Sunscreen</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">HAIR TREATMENTS</button>
+            <div class="dropdown-content">
+              <a href="colorconditioner.html">Hair Color Conditioner</a>
+              <a href="damagerepair.html">Damage Repairing</a>
+              <a href="moisturizing.html">Moisturizing</a>
+              <!-- <a href="">Smoothing</a> -->
+              <!-- <a href="#">Styling Products</a>
+              <a href="#">Hair Tools</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">HAIR COLOR</button>
+            <div class="dropdown-content">
+              <a href="colorneutron.html">Hair Color Neutralizer</a>
+              <a href="temporarycolor.html">Temporary Hair Color</a>
+              <a href="permanentcolor.html">Permanent Hair Color</a>
+              <!-- <a href="#">Scrubs</a>
+              <a href="#">Bath Bombs</a>
+              <a href="#">Oils</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">HAIR LOSS</button>
+            <div class="dropdown-content">
+              <a href="hairregrow.html">Hair Regrowth Treatment</a>
+              <a href="vitamins.html">Vitamins</a>
+              <!-- <a href="#">Body Mists</a>
+              <a href="#">Home Scents</a>
+              <a href="#">Gift Sets</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">STYLING PRODUCTS</button>
+            <div class="dropdown-content">
+              <a href="#">Hair Gel</a>
+              <a href="#">Hair Glue</a>
+              <a href="#">Hair Spray</a>
+              <a href="#">Mousse & Foams</a>
+              <!-- <a href="#">Hair Accessories</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">STYLING TOOLS</button>
+            <div class="dropdown-content">
+              <a href="#">Hair Dryers</a>
+              <a href="#">Hair Rollers</a>
+              <a href="#">Straightening Iron</a>
+              <a href="#">Brushes & Combs</a>
+              <!-- <a href="#">All Brands</a> -->
+            </div>
+          </div>
+          <!-- <div class="dropdown">
+            <button class="dropbtn">SALE</button>
+            <div class="dropdown-content">
+              <a href="#">All Sale</a>
+              <a href="#">Makeup Sale</a>
+              <a href="#">Skincare Sale</a>
+              <a href="#">Hair Care Sale</a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.pexels.com/photos/7148533/pexels-photo-7148533.jpeg?cs=srgb&dl=pexels-souranshi-fashion-and-lifestyle-magazine-2959920-7148533.jpg&fm=jpg&_gl=1*8y725o*_ga*OTU3MTIxNDUzLjE3Mzg5NDE4NzI.*_ga_8JE65Q40S6*MTczODk0MTg3Mi4xLjEuMTczODk0MjA4Mi4wLjAuMA.." class="d-block w-100 loop" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel2.webp" class="d-block w-100 loop" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel3.jpeg" class="d-block w-100 loop" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel4.jpeg" class="d-block w-100 loop" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/carousel5.jpeg" class="d-block w-100 loop" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!-- homematerial -->
+    <main>
+        <section class="category">
+            <h2>SHAMPOOS <a href="#">SHOP ALL SHAMPOOS</a></h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/tresemeshampoo.PNG" class="card-img-top" alt="Shampoo 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Rich Moisture Shampoo for Dry Hair</h5>
+                            <p class="card-text brand">TRESemmé</p>
+                            <p class="card-text price">$45.95</p>
+                            <button class="add-to-cart" onclick="addToCart({ id: 1, name: 'Rich Moisture Shampoo for Dry Hair', price: 45.95, image: 'images/tresemeshampoo.PNG' })">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/olaplexshampoo.PNG" class="card-img-top" alt="Shampoo 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Nº.4P Blonde Enhancer Toning Shampoo</h5>
+                            <p class="card-text brand">Olaplex</p>
+                            <p class="card-text price">$99.00</p>
+                            <button class="add-to-cart" onclick="addToCart({ id: 2, name: 'Nº.4P BLONDE ENHANCER™ TONING SHAMPOO', price: 99.00, image: 'images/olaplexshampoo.PNG' })">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/kerastaseshampoo.PNG" class="card-img-top" alt="Shampoo 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Kerastase Nutritive Bain Satin Shampoo</h5>
+                            <p class="card-text brand">KÉRASTASE</p>
+                            <p class="card-text price">$32.50</p>
+                            <button class="add-to-cart" onclick="addToCart({ id: 3, name: 'Kerastase Nutritive Bain Satin Shampoo', price: 32.50, image: 'images/kerastaseshampoo.PNG' })">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="see-more">SEE MORE</button>
+        </section>
+    
+        <section class="category">
+            <h2>CONDITIONERS <a href="#">SHOP ALL CONDITIONERS</a></h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/tresemeconditioner.PNG" class="card-img-top" alt="Conditioner 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Keratin Smooth Anti Frizz Conditioner</h5>
+                            <p class="card-text brand">TRESemmé</p>
+                            <p class="card-text price">$24.99</p>
+                            <button class="add-to-cart" onclick="addToCart({ id: 4, name: 'Keratin Smooth Anti Frizz Conditioner for Frizzy Hair', price: 24.99, image: 'images/tresemeconditioner.PNG' })">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/olaplexconditioner.PNG" class="card-img-top" alt="Conditioner 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Nº.5 Bond Mantenance Conditioner jumbo</h5>
+                            <p class="card-text brand">Olaplex</p>
+                            <p class="card-text price">$19.50</p>
+                            <button class="add-to-cart" onclick="addToCart({ id: 5, name: 'Nº.5 BOND MAINTENANCE® CONDITIONER JUMBO', price: 19.50, image: 'images/olaplexconditioner.PNG' })">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/kerastaseconditioner.PNG" class="card-img-top" alt="Conditioner 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Kerastase Genesis Strengthening Conditioner</h5>
+                            <p class="card-text brand">KÉRASTASE</p>
+                            <p class="card-text price">$29.00</p>
+                            <button class="add-to-cart" onclick="addToCart({ id: 6, name: 'Kerastase Genesis Strengthening Conditioner', price: 29.00, image: 'images/kerastaseconditioner.PNG' })">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="see-more">SEE MORE</button>
+        </section>
+    
+        <section class="category">
+            <h2>HAIR TREATMENTS <a href="#">SHOP ALL HAIR TREATMENTS</a></h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/tresemehairtreatment.PNG" class="card-img-top" alt="Hair Treatment 1">
+                        <div class="card-body">
+                            <h5 class="card-title">TRESemmé Hydrating & Detangling Cream Serum</h5>
+                            <p class="card-text brand">TRESemmé</p>
+                            <p class="card-text price">$34.99</p>
+                            <button class="add-to-cart" onclick="addToCart({ id: 7, name: 'TRESemmé Hydrating & Detangling Cream Serum', price: 34.99, image: 'images/tresemehairtreatment.PNG' })">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/olaplexhairtreatment.PNG" class="card-img-top" alt="Hair Treatment 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Olaplex No. 0 Intensive Bond Building Hair Treatment</h5>
+                            <p class="card-text brand">Olaplex</p>
+                            <p class="card-text price">$29.50</p>
+                            <button class="add-to-cart" onclick="addToCart({ id: 8, name: 'Olaplex No. 0 Intensive Bond Building Hair Treatment', price: 29.50, image: 'images/olaplexhairtreatment.PNG' })">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/kerastasehairtreatment.PNG" class="card-img-top" alt="Hair Treatment 3">
+                        <div class="card-body">
+                            <h5 class="card-title">KÉRASTASE Resistance Therapiste Hair Mask for every hair type</h5>
+                            <p class="card-text brand">KÉRASTASE</p>
+                            <p class="card-text price">$39.00</p>
+                            <button class="add-to-cart" onclick="addToCart({ id: 9, name: 'KÉRASTASE Resistance Therapiste Hair Mask', price: 39.00, image: 'images/kerastasehairtreatment.PNG' })">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="see-more">SEE MORE</button>
+        </section>
+
+        <section class="category">
+            <h2>HAIR STYLING PRODUCTS <a href="#">SHOP ALL HAIR STYLING PRODUCTS</a></h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/tresemehairstyling.PNG" class="card-img-top" alt="Styling Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">TRESemmé Hair Spray Extra Hold </h5>
+                            <p class="card-text brand">TRESemmé</p>
+                            <p class="card-text price">$14.99</p>
+                            <button class="add-to-cart" onclick="addToCart({ id: 13, name: 'TRESemmé TRES Two Non Aerosol Hair Spray Extra Hold', price: 14.99, image: 'images/tresemehairstyling.PNG' })">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/olaplexhairstyling.PNG" class="card-img-top" alt="Styling Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Olaplex No. 6 Leave-In Styling Hair Cream</h5>
+                            <p class="card-text brand">Olaplex</p>
+                            <p class="card-text price">$9.50</p>
+                            <button class="add-to-cart" onclick="addToCart({ id: 14, name: 'Olaplex No. 6 Bond Smoother, Leave-In Styling Hair Cream Treatment', price: 9.50, image: 'images/olaplexhairstyling.PNG' })">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/kerastasehairstyling.PNG" class="card-img-top" alt="Styling Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">KÉRASTASE Mousse Bouffante Hair Mousse</h5>
+                            <p class="card-text brand">KÉRASTASE</p>
+                            <p class="card-text price">$19.00</p>
+                            <button class="add-to-cart" onclick="addToCart({ id: 15, name: 'KÉRASTASE Mousse Bouffante Hair Mousse', price: 19.00, image: 'images/kerastasehairstyling.PNG' })">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="see-more">SEE MORE</button>
+        </section>
+        
+        <section class="category">
+            <h2>HAIR COLOR <a href="#">SHOP ALL HAIR COLOR</a></h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card">
+                        <img src="images/tresemehaircolor.PNG" class="card-img-top" alt="Styling Product 1">
+                        <div class="card-body">
+                            <h5 class="card-title">TRESemmé Root Touch-Up Light Brown & Dark Brown Temporary Hair Color  Spray</h5>
+                            <p class="card-text brand">TRESemmé</p>
+                            <p class="card-text price">$14.99</p>
+                            <button class="add-to-cart" onclick="addToCart({ id: 16, name: 'TRESemmé Root Touch-Up Light Brown & Dark Brown Temporary Hair Color Root Cover Up Spray', price: 14.99, image: 'images/tresemehaircolor.PNG' })">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/colorcharmhaircolor.PNG" class="card-img-top" alt="Styling Product 2">
+                        <div class="card-body">
+                            <h5 class="card-title">COLORCHARM Demi Permanent Hair Color, Hair Dye for Gray Hair Coverage, Adds Gloss, 2 oz</h5>
+                            <p class="card-text brand">COLORCHARM</p>
+                            <p class="card-text price">$9.50</p>
+                            <button class="add-to-cart" onclick="addToCart({ id: 17, name: 'COLORCHARM Demi Permanent Hair Color, Hair Dye for Gray Hair Coverage, Adds Gloss, 2 oz', price: 9.50, image: 'images/colorcharmhaircolor.PNG' })">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card">
+                        <img src="images/lorealhaircolor.PNG" class="card-img-top" alt="Styling Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">L'Oréal Technique Excellence Crème Permanent Hair Color</h5>
+                            <p class="card-text brand">L'Oréal</p>
+                            <p class="card-text price">$19.00</p>
+                            <button class="add-to-cart" onclick="addToCart({ id: 18, name: 'L\'Oréal Technique Excellence Crème Permanent Hair Color', price: 19.00, image: 'images/lorealhaircolor.PNG' })">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="see-more">SEE MORE</button>
+            <br><br><br>
+        </section>
+   
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="footer-container">
+                  <div class="footer-top">
+                    <div class="footer-left">
+                      <p>#HairCare</p>
+                      <p>Money Back Guarantee</p>
+                      <p>Voluntary Recall</p>
+                    </div>
+                    <div class="footer-center">
+                      <p>Share your good hair day</p>
+                      <p>#HairCare</p>
+                    </div>
+                    <div class="footer-right">
+                      <p>connect with us</p>
+                      <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                      </div>
+                      <!-- <div class="footer-logos">
+                        <img src="smartlabel-logo.png" alt="SmartLabel Logo" class="footer-logo">
+                        <img src="terracycle-logo.png" alt="TerraCycle Logo" class="footer-logo">
+                      </div> -->
+                    </div>
+                  </div>
+                  <div class="footer-bottom">
+                    <p>Contact Us | Privacy | Consumer Health Data Privacy Policy | Terms & Conditions | Your Privacy Choices <i class="bi bi-shield-lock"></i></p>
+                    <p>Do Not Sell or Share My Personal Information / Opt-Out of Targeted Advertising | NOTICE: We May Sell Your Sensitive Personal Data.</p>
+                    <p>© 2025 HairCare | HairCare Beauty</p>
+                    <p>Part of the HairCare Family: [Your Other Brands/Categories]</p>
+                  </div>
+                </div>
+              </footer>
+</body>
+</html>

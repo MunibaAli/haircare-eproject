@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curl Defining - HairCare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        </header>
+         <!-- navbar1 -->
+    <div class="top-bar">
+        <div class="container">
+          <div class="left-content">
+            <span>Will Take 3 to 5 Working days Delivery Time.</span>
+          </div>
+          <div class="right-content">
+            <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/login.php/">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="contact.html">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- navbar2 -->
+      <div class="navbar2">
+        <div class="container">
+            <a href="images/logo.png" class="logo">
+                <img src="images/LOGO..PNG" alt="HairCare">
+            </a>
+            <div class="right-content">
+                <a href="loginregister.html">LOGIN/REGISTER</a>
+                <span class="cart">
+                  <a href="#" onclick="toggleCart()">
+                    <i class="bi bi-bag"></i>
+                  </a>
+                </span>
+                <div class="search-container">
+                  <a href="javascript:void(0);" class="search-icon">
+                    <i class="bi bi-search"></i>
+                  </a>
+                </div>
+          
+                <!-- The Search Dropdown -->
+                <div class="search-dropdown" id="searchDropdown">
+                  <div class="search-content">
+                    <input
+                      type="text"
+                      placeholder="Search by product or keyword"
+                      class="search-input"
+                    />
+                    <span class="close-search">X</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    <script src="search.js"></script>
+
+    <!-- cart -->
+    <div class="cart-container" id="cart" style="display: none;">
+        <div class="cart-header">
+            <h2>Shopping cart</h2>
+            <a href="#" onclick="toggleCart()">X Close</a>
+        </div>
+        <div id="cart-items"></div>
+        <div class="subtotal">
+            <span>Subtotal:</span>
+            <span id="subtotal-value">Rs0.00</span>
+        </div>
+        <div class="buttons">
+            <a href="#" onclick="Cart.toggleCart()">X Close</a>
+<button onclick="Cart.viewCart()">VIEW CART</button>
+<button onclick="Cart.checkout()">CHECKOUT</button>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+       <!-- navbar3 -->
+       <div class="navbar3">
+        <div class="container">
+          <div class="dropdown">
+            <button class="dropbtn">SHAMPOO</button>
+            <div class="dropdown-content">
+              <a href="curl.html">Curl Defining</a>
+              <a href="damaged.html">Damaged</a>
+              <a href="dandruff.html">Dandruff</a>
+              <a href="hairloss.html">Hairloss</a>
+              <a href="normal.html">Normal</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">CONDITIONER</button>
+            <div class="dropdown-content">
+              <a href="smoothing.html">Smoothing</a>
+              <a href="#">Straightening</a>
+              <a href="#">Volumizing Conditioner</a>
+              <!-- <a href="#">Masks</a>
+              <a href="#">Toners</a>
+              <a href="#">Sunscreen</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">HAIR TREATMENTS</button>
+            <div class="dropdown-content">
+              <a href="#">Hair Color Conditioner</a>
+              <a href="#">Damage Repairing</a>
+              <a href="#">Moisturizing</a>
+              <a href="#">Smoothing</a>
+              <!-- <a href="#">Styling Products</a>
+              <a href="#">Hair Tools</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">HAIR COLOR</button>
+            <div class="dropdown-content">
+              <a href="#">Hair Color Neutralizer</a>
+              <a href="#">Temporary Hair Color</a>
+              <a href="#">Permanent Hair Color</a>
+              <!-- <a href="#">Scrubs</a>
+              <a href="#">Bath Bombs</a>
+              <a href="#">Oils</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">HAIR LOSS</button>
+            <div class="dropdown-content">
+              <a href="#">Hair Regrowth Treatment</a>
+              <a href="#">Vitamins</a>
+              <!-- <a href="#">Body Mists</a>
+              <a href="#">Home Scents</a>
+              <a href="#">Gift Sets</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">STYLING PRODUCTS</button>
+            <div class="dropdown-content">
+              <a href="#">Hair Gel</a>
+              <a href="#">Hair Glue</a>
+              <a href="#">Hair Spray</a>
+              <a href="#">Mousse & Foams</a>
+              <!-- <a href="#">Hair Accessories</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">STYLING TOOLS</button>
+            <div class="dropdown-content">
+              <a href="#">Hair Dryers</a>
+              <a href="#">Hair Rollers</a>
+              <a href="#">Straightening Iron</a>
+              <a href="#">Brushes & Combs</a>
+              <!-- <a href="#">All Brands</a> -->
+            </div>
+          </div>
+          <!-- <div class="dropdown">
+            <button class="dropbtn">SALE</button>
+            <div class="dropdown-content">
+              <a href="#">All Sale</a>
+              <a href="#">Makeup Sale</a>
+              <a href="#">Skincare Sale</a>
+              <a href="#">Hair Care Sale</a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+<!-- page material -->
+
+<div class="shampoo-section">
+    <div class="shampoo-header">
+        <a href="home.html" class="arrow">&larr;</a>
+        <h2>Curl Shampoo</h2>
+    </div>
+</div>
+
+
+<div class="product-grid">
+    </div>
+    <main>
+      <section class="curl-defining-products">
+          <div class="product-grid">
+              <div class="product-card">
+                  <img src="images/CURL1.PNG" alt="Ouidad Curl Quencher Moisturizing Shampoo">
+                  <h3><b>Ouidad</b></h3>
+                  <p>Ouidad Curl Quencher Moisturizing Shampoo</p>
+                  <p class="price"><b>$26.00</b></p>
+                  <button class="add-to-cart" onclick="addToCart({ id: 101, name: 'Ouidad Curl Quencher Moisturizing Shampoo', price: 26.00, image: 'images/CURL1.PNG' })">ADD TO CART</button>
+              </div>
+              <div class="product-card">
+                  <img src="images/CURL2.PNG" alt="SheaMoisture Curl and Shine Shampoo">
+                  <h3><b>OGX Quenching + Coconut Curls</b></h3>
+                  <p>Coconut Curls, Moisturizing Shampoo</p>
+                  <p class="price"><b>$10.99</b></p>
+                  <button class="add-to-cart" onclick="addToCart({ id: 102, name: 'Coconut Curls, Moisturizing Shampoo', price: 10.99, image: 'images/CURL2.PNG' })">ADD TO CART</button>
+              </div>
+              <div class="product-card">
+                  <img src="images/CURL3.PNG" alt="Mielle Organics Pomegranate & Honey Shampoo">
+                  <h3><B>V&Co. </B></h3>
+                  <p>Pomegranate & Honey Shampoo</p>
+                  <p class="price"><B>$7.98</B></p>
+                  <button class="add-to-cart" onclick="addToCart({ id: 103, name: 'Pomegranate & Honey Shampoo', price: 7.98, image: 'images/CURL3.PNG' })">ADD TO CART</button>
+              </div>
+              <div class="product-card">
+                  <img src="images/CURL4.PNG" alt="As I Am Coconut Cowash Cleansing Conditioner">
+                  <h3><B>Cake Beauty</B></h3>
+                  <p>Curl Enhancing Shampoo</p>
+                  <p class="price"><B>$10.99</B></p>
+                  <button class="add-to-cart" onclick="addToCart({ id: 104, name: 'Curl Enhancing Shampoo', price: 10.99, image: 'images/CURL4.PNG' })">ADD TO CART</button>
+              </div>
+              <div class="product-card">
+                  <img src="images/CURL5.PNG" alt="Camille Rose Naturals Moroccan Pear Conditioning Custard">
+                  <h3><B>Just Curls</B></h3>
+                  <p>Shampoo with Coconut Oil</p>
+                  <p class="price"><B>$14.99</B></p>
+                  <button class="add-to-cart" onclick="addToCart({ id: 105, name: 'Shampoo with Coconut Oil', price: 14.99, image: 'images/CURL5.PNG' })">ADD TO CART</button>
+              </div>
+              <div class="product-card">
+                  <img src="images/CURL6.PNG" alt="Cantu Shea Butter for Natural Hair Moisturizing Twist & Lock Gel">
+                  <h3><B>GYADA COSMETICS</B></h3>
+                  <p>GYADA Curl Defining Shampoo</p>
+                  <p class="price"><B>$12.90</B></p>
+                  <button class="add-to-cart" onclick="addToCart({ id: 106, name: 'GYADA Curl Defining Shampoo', price: 12.90, image: 'images/CURL6.PNG' })">ADD TO CART</button>
+              </div>
+              <div class="product-card">
+                  <img src="images/CURL7.PNG" alt="Design Essentials Natural Curl Enhancing Mousse">
+                  <h3><B>Biotop Professional 69</B></h3>
+                  <p>Curl Defining & Color Safe Shampoo</p>
+                  <p class="price"><B>$33.99</B></p>
+                  <button class="add-to-cart" onclick="addToCart({ id: 107, name: 'Curl Defining & Color Safe Shampoo', price: 33.99, image: 'images/CURL7.PNG' })">ADD TO CART</button>
+              </div>
+              <div class="product-card">
+                  <img src="images/CURL8.PNG" alt="Kinky-Curly Knot Today Leave-In Detangler">
+                  <h3><B>Esha Store</B></h3>
+                  <p>Esha Girl Natural 3C & 4C Curl Shampoo</p>
+                  <p class="price"><b>$11.99</b></p>
+                  <button class="add-to-cart" onclick="addToCart({ id: 108, name: 'Esha Girl Natural 3C & 4C Curl Shampoo', price: 11.99, image: 'images/CURL8.PNG' })">ADD TO CART</button>
+              </div>
+          </div>
+      </section>
+  </main>
+
+  <script src="cart.js"></script>
+    <script>
+        // Optional: If you want to change the button text when an option is selected
+document.querySelectorAll('.sort-content a').forEach(item => {
+    item.addEventListener('click', event => {
+        document.querySelector('.sort-button').textContent = event.target.textContent;
+    });
+});
+    </script>
+    
+        
+        <!-- FOOTER -->
+        <footer class="footer">
+          <div class="footer-container">
+            <div class="footer-top">
+              <div class="footer-left">
+                <p>#HairCare</p>
+                <p>Money Back Guarantee</p>
+                <p>Voluntary Recall</p>
+              </div>
+              <div class="footer-center">
+                <p>Share your good hair day</p>
+                <p>#HairCare</p>
+              </div>
+              <div class="footer-right">
+                <p>connect with us</p>
+                <div class="social-icons">
+                  <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+                </div>
+                <!-- <div class="footer-logos">
+                  <img src="smartlabel-logo.png" alt="SmartLabel Logo" class="footer-logo">
+                  <img src="terracycle-logo.png" alt="TerraCycle Logo" class="footer-logo">
+                </div> -->
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>Contact Us | Privacy | Consumer Health Data Privacy Policy | Terms & Conditions | Your Privacy Choices <i class="bi bi-shield-lock"></i></p>
+              <p>Do Not Sell or Share My Personal Information / Opt-Out of Targeted Advertising | NOTICE: We May Sell Your Sensitive Personal Data.</p>
+              <p>© 2025 HairCare | HairCare Beauty</p>
+              <p>Part of the HairCare Family: [Your Other Brands/Categories]</p>
+            </div>
+          </div>
+        </footer>
+    </body>
+    </html>

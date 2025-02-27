@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HairCare</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- navbar1 -->
+    <div class="top-bar">
+        <div class="container">
+          <div class="left-content">
+            <span>Will Take 3 to 5 Working days Delivery Time.</span>
+          </div>
+          <div class="right-content">
+            <a href="https://www.whatsapp.com/"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://www.facebook.com/login.php/">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a href="contact.html">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+    
+      <!-- navbar2 -->
+      <div class="navbar2">
+        <div class="container">
+            <a href="images/logo.png" class="logo">
+                <img src="images/LOGO..PNG" alt="HairCare">
+            </a>
+            <div class="right-content">
+                <a href="loginregister.html">LOGIN/REGISTER</a>
+                <span class="cart">
+                  <a href="#" onclick="toggleCart()">
+                    <i class="bi bi-bag"></i>
+                  </a>
+                </span>
+                <div class="search-container">
+                  <a href="javascript:void(0);" class="search-icon">
+                    <i class="bi bi-search"></i>
+                  </a>
+                </div>
+          
+                <!-- The Search Dropdown -->
+                <div class="search-dropdown" id="searchDropdown">
+                  <div class="search-content">
+                    <input
+                      type="text"
+                      placeholder="Search by product or keyword"
+                      class="search-input"
+                    />
+                    <span class="close-search">X</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+    <script src="search.js"></script>
+
+  
+    
+      <!-- cart -->
+      <div class="cart-container" id="cart" style="display: none;">
+        <div class="cart-header">
+            <h2>Shopping cart</h2>
+            <a href="#" onclick="toggleCart()">X Close</a>
+        </div>
+        <div id="cart-items"></div>
+        <div class="subtotal">
+            <span>Subtotal:</span>
+            <span id="subtotal-value">Rs0.00</span>
+        </div>
+        <div class="buttons">
+            <a href="#" onclick="Cart.toggleCart()">X Close</a>
+<button onclick="Cart.viewCart()">VIEW CART</button>
+<button onclick="Cart.checkout()">CHECKOUT</button>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+      <!-- navbar3 -->
+      <div class="navbar3">
+        <div class="container">
+          <div class="dropdown">
+            <button class="dropbtn">SHAMPOO</button>
+            <div class="dropdown-content">
+              <a href="curl.html">Curl Defining</a>
+              <a href="damaged.html">Damaged</a>
+              <a href="dandruff.html">Dandruff</a>
+              <a href="hairloss.html">Hairloss</a>
+              <a href="normal.html">Normal</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">CONDITIONER</button>
+            <div class="dropdown-content">
+              <a href="smoothing.html">Smoothing</a>
+              <a href="Straightening.html">Straightening</a>
+              <a href="volumizing.html">Volumizing Conditioner</a>
+              <!-- <a href="#">Masks</a>
+              <a href="#">Toners</a>
+              <a href="#">Sunscreen</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">HAIR TREATMENTS</button>
+            <div class="dropdown-content">
+              <a href="colorconditioner.html">Hair Color Conditioner</a>
+              <a href="damagerepair.html">Damage Repairing</a>
+              <a href="moisturizing.html">Moisturizing</a>
+              <!-- <a href="">Smoothing</a> -->
+              <!-- <a href="#">Styling Products</a>
+              <a href="#">Hair Tools</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">HAIR COLOR</button>
+            <div class="dropdown-content">
+              <a href="colorneutron.html">Hair Color Neutralizer</a>
+              <a href="temporarycolor.html">Temporary Hair Color</a>
+              <a href="permanentcolor.html">Permanent Hair Color</a>
+              <!-- <a href="#">Scrubs</a>
+              <a href="#">Bath Bombs</a>
+              <a href="#">Oils</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">HAIR LOSS</button>
+            <div class="dropdown-content">
+              <a href="#">Hair Regrowth Treatment</a>
+              <a href="#">Vitamins</a>
+              <!-- <a href="#">Body Mists</a>
+              <a href="#">Home Scents</a>
+              <a href="#">Gift Sets</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">STYLING PRODUCTS</button>
+            <div class="dropdown-content">
+              <a href="#">Hair Gel</a>
+              <a href="#">Hair Glue</a>
+              <a href="#">Hair Spray</a>
+              <a href="#">Mousse & Foams</a>
+              <!-- <a href="#">Hair Accessories</a> -->
+            </div>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn">STYLING TOOLS</button>
+            <div class="dropdown-content">
+              <a href="#">Hair Dryers</a>
+              <a href="#">Hair Rollers</a>
+              <a href="#">Straightening Iron</a>
+              <a href="#">Brushes & Combs</a>
+              <!-- <a href="#">All Brands</a> -->
+            </div>
+          </div>
+          <!-- <div class="dropdown">
+            <button class="dropbtn">SALE</button>
+            <div class="dropdown-content">
+              <a href="#">All Sale</a>
+              <a href="#">Makeup Sale</a>
+              <a href="#">Skincare Sale</a>
+              <a href="#">Hair Care Sale</a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+
+       <!-- page material  -->
+       <div class="shampoo-section">
+        <div class="shampoo-header">
+            <a href="home.html" class="arrow">&larr;</a>
+            <h2>Permanent Hair Color</h2>
+        </div>
+    </div>
+
+
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="permanent1.jpg" alt="Permanent Hair Color Cream - Black">
+            <h3><b>Black Cream</b></h3>
+            <p>Permanent Hair Color Cream</p>
+            <p class="price"><b>$18.00</b></p>
+            <button class="add-to-cart" onclick="addToCart({ id: 1201, name: 'Permanent Hair Color Cream - Black', price: 18.00, image: 'permanent1.jpg' })">ADD TO CART</button>
+        </div>
+        <div class="product-card">
+            <img src="permanent2.jpg" alt="Permanent Hair Dye Kit - Brown">
+            <h3><b>Brown Kit</b></h3>
+            <p>Permanent Hair Dye Kit</p>
+            <p class="price"><b>$22.00</b></p>
+            <button class="add-to-cart" onclick="addToCart({ id: 1202, name: 'Permanent Hair Dye Kit - Brown', price: 22.00, image: 'permanent2.jpg' })">ADD TO CART</button>
+        </div>
+        <div class="product-card">
+            <img src="permanent3.jpg" alt="Permanent Hair Color Gel - Blonde">
+            <h3><b>Blonde Gel</b></h3>
+            <p>Permanent Hair Color Gel</p>
+            <p class="price"><b>$25.00</b></p>
+            <button class="add-to-cart" onclick="addToCart({ id: 1203, name: 'Permanent Hair Color Gel - Blonde', price: 25.00, image: 'permanent3.jpg' })">ADD TO CART</button>
+        </div>
+        <div class="product-card">
+            <img src="permanent4.jpg" alt="Permanent Hair Color Mousse - Red">
+            <h3><b>Red Mousse</b></h3>
+            <p>Permanent Hair Color Mousse</p>
+            <p class="price"><b>$20.00</b></p>
+            <button class="add-to-cart" onclick="addToCart({ id: 1204, name: 'Permanent Hair Color Mousse - Red', price: 20.00, image: 'permanent4.jpg' })">ADD TO CART</button>
+        </div>
+        <div class="product-card">
+            <img src="permanent5.jpg" alt="Permanent Hair Color Serum - Auburn">
+            <h3><b>Auburn Serum</b></h3>
+            <p>Permanent Hair Color Serum</p>
+            <p class="price"><b>$28.00</b></p>
+            <button class="add-to-cart" onclick="addToCart({ id: 1205, name: 'Permanent Hair Color Serum - Auburn', price: 28.00, image: 'permanent5.jpg' })">ADD TO CART</button>
+        </div>
+        <div class="product-card">
+            <img src="permanent6.jpg" alt="Permanent Hair Color Oil - Dark Brown">
+            <h3><b>Dark Brown Oil</b></h3>
+            <p>Permanent Hair Color Oil</p>
+            <p class="price"><b>$30.00</b></p>
+            <button class="add-to-cart" onclick="addToCart({ id: 1206, name: 'Permanent Hair Color Oil - Dark Brown', price: 30.00, image: 'permanent6.jpg' })">ADD TO CART</button>
+        </div>
+        <div class="product-card">
+            <img src="permanent7.jpg" alt="Permanent Hair Color Powder - Copper">
+            <h3><b>Copper Powder</b></h3>
+            <p>Permanent Hair Color Powder</p>
+            <p class="price"><b>$23.00</b></p>
+            <button class="add-to-cart" onclick="addToCart({ id: 1207, name: 'Permanent Hair Color Powder - Copper', price: 23.00, image: 'permanent7.jpg' })">ADD TO CART</button>
+        </div>
+        <div class="product-card">
+            <img src="permanent8.jpg" alt="Permanent Hair Color Cream - Platinum Blonde">
+            <h3><b>Platinum Blonde Cream</b></h3>
+            <p>Permanent Hair Color Cream</p>
+            <p class="price"><b>$26.00</b></p>
+            <button class="add-to-cart" onclick="addToCart({ id: 1208, name: 'Permanent Hair Color Cream - Platinum Blonde', price: 26.00, image: 'permanent8.jpg' })">ADD TO CART</button>
+        </div>
+    </div>
+
+
+     <!-- FOOTER -->
+     <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-top">
+            <div class="footer-left">
+              <p>#HairCare</p>
+              <p>Money Back Guarantee</p>
+              <p>Voluntary Recall</p>
+            </div>
+            <div class="footer-center">
+              <p>Share your good hair day</p>
+              <p>#HairCare</p>
+            </div>
+            <div class="footer-right">
+              <p>connect with us</p>
+              <div class="social-icons">
+                <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+              </div>
+              <!-- <div class="footer-logos">
+                <img src="smartlabel-logo.png" alt="SmartLabel Logo" class="footer-logo">
+                <img src="terracycle-logo.png" alt="TerraCycle Logo" class="footer-logo">
+              </div> -->
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>Contact Us | Privacy | Consumer Health Data Privacy Policy | Terms & Conditions | Your Privacy Choices <i class="bi bi-shield-lock"></i></p>
+            <p>Do Not Sell or Share My Personal Information / Opt-Out of Targeted Advertising | NOTICE: We May Sell Your Sensitive Personal Data.</p>
+            <p>© 2025 HairCare | HairCare Beauty</p>
+            <p>Part of the HairCare Family: [Your Other Brands/Categories]</p>
+          </div>
+        </div>
+      </footer>
+    </body>
+    </html>

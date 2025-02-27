@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HairCare</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        .contactheader{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #343a40; 
+        }
+
+        header {
+            background-color: #e98282;
+            color: #fff;
+            padding: 20px 0; 
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            max-width: 960px; 
+            margin: 20px auto; 
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+            border-radius: 8px; 
+            
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 20px;
+            margin-bottom: 30px; 
+        }
+
+        .contact-info div {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #eee; 
+            border-radius: 8px;
+        }
+
+        .contact-info i { 
+            font-size: 2rem;
+            color: #e98282;
+            margin-bottom: 10px;
+        }
+        .contact-info img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .form-container form {
+            display: grid;
+            gap: 15px; 
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #e98282; 
+        }
+
+        form input,
+        form textarea {
+            padding: 12px;
+            border: 1px solid #ced4da; 
+            border-radius: 5px;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; 
+        }
+
+        form input:focus,
+        form textarea:focus {
+            border-color: #e98282; 
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(233, 130, 130, 0.25); /* Theme color */
+        }
+
+        form button {
+            background-color: #e98282;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.15s ease-in-out;
+        }
+
+        form button:hover {
+            background-color: #d16b6b; 
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="contactheader">Contact Us</h1>
+    </header>
+
+    <div class="container">
+        <div class="contact-info">
+            <div>
+                <i class="fas fa-map-marker-alt"></i>
+                <h2>Our Location</h2>
+                <p>123 Main Street<br>Anytown, CA 91234</p>
+                <img src="images/location.webp" alt="Location">
+            </div>
+            <div>
+                <i class="far fa-clock"></i>
+                <h2>Business Hours</h2>
+                <p>Mon-Fri: 9:00 AM - 6:00 PM<br>Sat-Sun: Closed</p>
+                <img src="images/businesshour.webp" alt="businesshour">
+            </div>
+        </div>
+
+        <div class="form-container">
+            <form action="#" method="post">
+                <h2>Send us a message</h2>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="sendmsg">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 HairCare. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
